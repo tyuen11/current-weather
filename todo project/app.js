@@ -1,9 +1,9 @@
 function newItem(){
   var newTask = document.getElementById("taskcreator").value;
   var list = document.getElementById("list");
-  var item = document.createElement("item");
+  var item = document.createElement("li");
 
-  item.appendChild(document.createTextNode("-" + newTask));
+  item.appendChild(document.createTextNode(newTask));
   list.appendChild(item);
   document.getElementById("taskcreator").value = "";
 
@@ -19,5 +19,4 @@ document.body.onkeyup = function(e){
 
 function removeItem(e){
   e.target.parentElement.removeChild(e.target);
-  <!--parentElement is the list "list"-->
 }
