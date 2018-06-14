@@ -1,0 +1,14 @@
+html{
+  text-align: center;
+}
+
+body{
+  margin: 0 auto;
+}
+#whole{
+  padding-top: 12%;
+}
+
+#h1, #h2{
+  font-weight: 300;
+}
